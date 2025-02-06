@@ -1,1 +1,1 @@
-DS GoIt js hm 10
+Denis S. Go-It js hm 10

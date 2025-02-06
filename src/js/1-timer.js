@@ -36,6 +36,7 @@ const options = {
             });
             disableButton(refs.startBtn);
         } else {
+            clearInterval(intervalId);
             enableButton(refs.startBtn);
         }
     },
@@ -50,8 +51,8 @@ refs.startBtn.addEventListener('click', () => {
     clearInterval(intervalId);
 
     intervalId = setInterval(() => {
-        const now = new Date();
-        const timeDifference = initTime - now;
+        const currentTime = Date.now();
+        const timeDifference = initTime - currentTime;
 
         if (timeDifference <= 0) {
             clearInterval(intervalId);
