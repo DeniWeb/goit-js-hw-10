@@ -4,7 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DS GoIt js hm 10</title>
-      <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-D4kpcHij.css">
+      <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
+      <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js"></script>
+      <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+      <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-TV8thd_k.css">
     </head>
     <body>
         <main>
@@ -13,7 +16,12 @@
                 <form class="form">
                     <label>
                         Delay (ms)
-                        <input type="number" name="delay" required />
+                        <input
+                            type="number"
+                            name="delay"
+                            step="1000"
+                            required
+                        />
                     </label>
 
                     <fieldset>
@@ -42,5 +50,6 @@
                 </form>
             </div>
         </main>
+
     </body>
 </html>
