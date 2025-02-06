@@ -1,3 +1,72 @@
-div > a:last-of-type {
-    margin-left: 20px;
+.timer-link {
+    display: block;
+    width: max-content;
+    margin: 10px auto;
+}
+
+input {
+    height: 40px;
+    width: 240px;
+    padding: 0 16px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    font-size: 16px;
+
+    &:hover {
+        border-color: rgb(0, 0, 0);
+    }
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+}
+
+.label {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+button {
+    height: 40px;
+    width: 75px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4e75ff;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    color: #fff;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #6c8cff;
+    }
+}
+
+.disabled {
+    background-color: #cfcfcf;
+    cursor: not-allowed;
+
+    &:hover {
+        background-color: #cfcfcf;
+    }
+}
+
+.active {
+    cursor: pointer;
 }
