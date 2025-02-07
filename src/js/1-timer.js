@@ -22,6 +22,7 @@ const options = {
     time_24hr: true,
     defaultDate: new Date(),
     minuteIncrement: 1,
+    enableSeconds: true,
     locale: {
         firstDayOfWeek: 1,
     },
