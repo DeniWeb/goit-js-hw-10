@@ -31,6 +31,7 @@ const options = {
 
         if (initTime < Date.now()) {
             iziToast.error({
+                iconUrl: 'https://img.icons8.com/emoji/48/cross-mark-emoji.png',
                 title: 'Error',
                 message: 'Please choose a date in the future',
                 position: 'topRight',
@@ -61,8 +62,10 @@ refs.startBtn.addEventListener('click', () => {
             refs.input.disabled = false;
 
             iziToast.success({
+                iconUrl:
+                    'https://img.icons8.com/emoji/48/check-mark-button-emoji.png',
                 title: 'Time is up!',
-                message: 'Good luck!',
+                message: 'Good luck and select your next date!',
                 position: 'topRight',
             });
             return;
